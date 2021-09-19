@@ -1,0 +1,38 @@
+{
+  "name": "bet-blockchain-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "config": "node ./server/config.js",
+    "start": "node app",
+    "server": "nodemon ./server/server.js",
+    "client": "cd ./client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ethereum-hdwallet": "^0.0.26",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-session": "^1.17.2",
+    "express-validate": "^0.0.8",
+    "joi": "^17.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.1.0",
+    "node-fetch": "^3.0.0",
+    "rootpath": "^0.1.2",
+    "sequelize": "^6.3.4",
+    "uuid": "^8.3.2",
+    "web3": "^1.5.2"
+  }
+}

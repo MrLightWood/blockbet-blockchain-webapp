@@ -1,0 +1,4 @@
+smart-contract/build/
+**/node_modules
+/node_modules
+.env
